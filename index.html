@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Personal Portfolio Page</title>
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<style>
+            @media (max-wdith: 75em) {
+                html {
+                    font-size: 59%; 
+                }
+            }
+            @media (max-width: 56.25em) {
+                html {
+                    font-size: 56%;
+                }
+            }
+            @media (max-width: 112.5em) { 
+                html {
+                    font-size: 65%;
+                }
+            }
+            @media (max-width: 1000px) {
+                html {
+                    font-size: 45%;
+                }
+            }
+        </style>
+    </head>>
+    <body>
+        <header id="navbar">
+            <div id="personal-logo">AK</div>
+			<nav id="nav-content">
+                <ul>
+                    <li><a class="nav-link" href="#welcome-section">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+			</nav>
+		</header>
+        <section id="welcome-section">
+            <h1 id="welcome-header">Hi, I'm Alex Kong.</h1>
+            <p id="welcome-description">I am a front-end web developer.</p>
+        </section>
+        <section id="about">
+            <div id="about-content">
+                <h2>ABOUT ME</h2>
+                <p>I am a self-taught web developer who is passionate about tech industry. I have a growth mindset to push myself to build cleaner designs and responsive UI for real world applications.</p>
+                <p>I am always open to new opportunities to contribute, learn and grow in the Dev Community.</p>
+                <p>Aside from coding, I have a love for culinary, camping, nature photography and cycling.</p>
+            </div>
+            <div id="tech-skills">
+                <h2>Skills</h2>
+                <div id="tech-icon-content">
+                    <span class="tech-icon">HTML5</span>
+                    <span class="tech-icon">CSS3</span>
+                    <span class="tech-icon">Javascript</span>
+                    <span class="tech-icon">Github</span>
+                    <span class="tech-icon">Visual Studio Code</span>
+                    <span class="tech-icon">Responsive Design</span>
+                    <span class="tech-icon">SEO</span>
+                    <span class="tech-icon">Figma</span>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="project-description">
+                <h2>PROJECTS</h2>
+                <p id="project-description-2">Here is a list of projects that I have made.</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-tile">
+                    <img src="images/Bob-Marley-Tribute-Page.png" alt="Tribute Page" class="project-img"/>
+                    <h3>Bob Marley Tribute Page</h3>
+                    <p>This is a tribute page for Bob Marley which I use CSS grid for images.</p>
+                    <a class="live-link" href="https://chefk2025.github.io/Tribute-Page-Design-2021" target="_blank">Live Link</a> 
+                </div>
+                <div class="project-tile">
+                    <img src="images/Kushikatsu-Don-Survey-Form-Page.png" alt="Survey Form Page" class="project-img"/>
+                    <h3>Kushikatsu Don Survey Page</h3>
+                    <p>This is a survey form page designed for Kushikatsu Don outlets. This is to evaluate their service delivery from customers.</p>
+                    <a class="live-link" href="https://chefk2025.github.io/Survey-Form-Page-2021" target="_blank">Live Link</a> 
+                </div>
+                <div class="project-tile">
+                    <img src="images/Audiophile-Edition-Product-Landing-Page.png" alt="Product Landing Page" class="project-img"/>
+                    <h3>Audiophile Edition Product Landing Page</h3>
+                    <p>This is a product landing page that target at Audiophiles. A collaboration with Senniheiser and IFI to design an unique listening experience.</p>
+                    <a class="live-link" href="https://chefk2025.github.io/Product-Landing-Page-2021" target="_blank">Live Link</a>  
+                </div>
+                <div class="project-tile">
+                    <img src="images/Technical-Documentation-Page-HTML5-template.png" alt="Technical Documentation Page" class="project-img"/>
+                    <h3>Technical Documentation</h3>
+                    <p>This is a techical documentation page template for HTML5.</p>
+                    <a class="live-link" href="https://chefk2025.github.io/Technical-Documentation-Page-2021" target="_blank">Live Link</a> 
+                </div>
+            </div>
+        </section>
+         
+        <section id="contact">
+            <h2 id="contact-header">CONTACT</h2>
+            <div class="contact-content">
+                <div id="contact-info">
+                    <div id="contact-description">
+                        <p>If you want to get in touch, please do not hesitate to email me at ak22022@gmail.com, or use this form. I will get back to you as soon as possible.</p>
+                    </div>
+                    <div id="social-link-container">
+                        <a class="social-icon" href="https://github.com/Chefk2025" target="_blank" id="profile-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a class="social-icon" href="#" target="_blank" id="Linkedin">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a class="social-icon" href="#" target="_blank" id="Email">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div id="contact-form">
+                    <div class="form-family">
+                        <label for="name" id="name-label">Name
+                        <input type="text" id="name" class="form-placeholder" placeholder="Enter Your Name" required/>
+                        </label>
+                    </div>
+                    <div class="form-family">
+                        <label for="email" id="email-label">Email
+                        <input type="email" id="email" class="form-placeholder" placeholder="Enter Your Email" required/>
+                        </label>
+                    </div>
+                    <div class="form-family">
+                        <label for="message" id="message-label">Message</label>
+                        <textarea type="text" id="message" class="form-placeholder" rows="5" columns="20" required>Enter Your Message</textarea>
+                    </div>
+                    <div class="form-family">
+                        <input type="submit" id="submit" value="SUBMIT">
+                    </div>
+                </div>
+           </div>
+        </section>
+        <footer>
+			<small>Created by Alex Kong &copy 2021</small>
+		</footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
